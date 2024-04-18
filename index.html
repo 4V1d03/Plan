@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Plan de Estudio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Ingeniería en Ciencias de la Computación</h1>
+
+
+    <!-- Período I -->
+    <div class="period">
+        <div class="period-title">
+            <h2>I Periodo</h2>
+        </div>
+    </div>
+    <div class="hero-panel">
+        <div class="courses-container">
+            <div class="course-card" data-id="ES101" data-unlocks="ES201">
+                <div class="course-title">Español</div>
+                <div class="course-code">ES101</div>
+            </div>
+            <div class="course-card" data-id="MT101" data-unlocks="MT201 - MT202 - FS201 - MT204" >
+                <div class="course-title">Matemáticas</div>
+                <div class="course-code">MT101</div>
+            </div>
+            <div class="course-card" data-id="IF112" data-unlocks="IF200">
+                <div class="course-title">Introducción a las Ciencias de la Computación</div>
+                <div class="course-code">IF112</div>
+            </div>
+            <div class="course-card" data-id="SC101">
+                <div class="course-title">Sociología</div>
+                <div class="course-code">SC101</div>
+            </div>
+            <div class="course-card" data-id="FI101" data-unlocks="CR201">
+                <div class="course-title">Filosofía</div>
+                <div class="course-code">FI101</div>
+            </div>
+            <div class="course-card" data-id="ESVU1" data-unlocks="">
+                <div class="course-title">Seminario de Iniciación</div>
+                <div class="course-code">ESVU1</div>
+            </div> 
+        </div>
+    </div>
+    
+    <!-- Período II -->
+    <div class="period">
+        <div class="period-title">
+            <h2>II Periodo</h2>
+        </div>
+    </div>
+    <div class="hero-panel">
+        <div class="courses-container">
+            <div class="course-card" data-id="ES201" data-prerequisite="ES101" data-unlocks="">
+                <div class="course-title">Expresión Oral y Escrita</div>
+                <div class="course-code">ES201</div>
+            </div>
+            <div class="course-card" data-id="MT201" data-prerequisite="MT101" data-unlocks="MT303">
+                <div class="course-title">Precálculo</div>
+                <div class="course-code">MT201</div>
+            </div>
+            <div class="course-card" data-id="IF200" data-prerequisite="IF112" data-unlocks="IF214 - IF213">
+                <div class="course-title">Fundamentos y Lógica de Programación</div>
+                <div class="course-code">IF200</div>
+            </div>
+            <div class="course-card" data-id="HS101" data-prerequisite="" data-unlocks="">
+                <div class="course-title">Historia de Honduras</div>
+                <div class="course-code">HS101</div>
+            </div>
+            <div class="course-card" data-id="CR201" data-prerequisite="FI101" data-unlocks="FI501">
+                <div class="course-title">El Hombre Frente a la Vida</div>
+                <div class="course-code">CR201</div>
+            </div>
+            <div class="course-card" data-id="IDIN1" data-prerequisite="" data-unlocks="IDIN2">
+                <div class="course-title">Inglés (Principiante)</div>
+                <div class="course-code">IDIN1</div>
+            </div>
+            <div class="course-card" data-id="ESPF1" data-prerequisite="" data-unlocks="">
+                <div class="course-title">Retiro de Padres de Familia</div>
+                <div class="course-code">ESPF1</div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- Período III -->
+    <div class="period">
+        <div class="period-title">
+            <h2>III Periodo</h2>
+        </div>
+    </div>
+    <div class="hero-panel">
+        <div class="courses-container">
+            <div class="course-card" data-id="MT202" data-prerequisite="MT101" data-unlocks="AD302">
+                <div class="course-title">Estadistica I</div>
+                <div class="course-code">MT202</div>
+            </div>
+            <div class="course-card" data-id="MT303" data-prerequisite="MT201" data-unlocks="MT401">
+                <div class="course-title">Calculo I</div>
+                <div class="course-code">MT303</div>
+            </div>
+            <div class="course-card" data-id="IF214" data-prerequisite="IF200" data-unlocks="IF303">
+                <div class="course-title">Progrmación Estructurada I</div>
+                <div class="course-code">IF214</div>
+            </div>
+            <div class="course-card" data-id="IF213" data-prerequisite="IF200" data-unlocks="">
+                <div class="course-title">Estructuras Discretas</div>
+                <div class="course-code">IF213</div>
+            </div>
+            <div class="course-card" data-id="IDIN2" data-prerequisite="IDIN1" data-unlocks="IDIN3">
+                <div class="course-title">Inglés (Intermedio Bajo)</div>
+                <div class="course-code">IDIN2</div>
+            </div>
+            <div class="course-card" data-id="IF394" data-prerequisite="" data-unlocks="">
+                <div class="course-title">Diseño Gráfico</div>
+                <div class="course-code">IF394</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Período IV -->
+    <div class="period">
+        <div class="period-title">
+            <h2>IV Periodo</h2>
+        </div>
+    </div>
+    <div class="hero-panel">
+        <div class="courses-container">
+            <div class="course-card" data-id="AD302" data-prerequisite="MT202" data-unlocks="">
+                <div class="course-title">Métodos y técnicas de investigación</div>
+                <div class="course-code">AD302</div>
+            </div>
+            <div class="course-card" data-id="MT401" data-prerequisite="MT303" data-unlocks="">
+                <div class="course-title">Calculo II</div>
+                <div class="course-code">MT401</div>
+            </div>
+            <div class="course-card" data-id="IF303" data-prerequisite="IF214" data-unlocks="IF325">
+                <div class="course-title">Progrmación Estructurada II</div>
+                <div class="course-code">IF303</div>
+            </div>
+            <div class="course-card" data-id="FS201" data-prerequisite="MT101" data-unlocks="IF319">
+                <div class="course-title">Física I</div>
+                <div class="course-code">FS201</div>
+            </div>
+            <div class="course-card" data-id="AD101" data-prerequisite="" data-unlocks="">
+                <div class="course-title">Administración</div>
+                <div class="course-code">AD101</div>
+            </div>
+            <div class="course-card" data-id="IDIN3" data-prerequisite="IDIN2" data-unlocks="IDIN4">
+                <div class="course-title">Inglés (Intermedio Alto)</div>
+                <div class="course-code">IDIN3</div>
+            </div>
+            <div class="course-card" data-id="CNFS1" data-prerequisite="" data-unlocks="">
+                <div class="course-title">Laboratorio de Física I</div>
+                <div class="course-code">CNFS1</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Período V -->
+    <div class="period">
+        <div class="period-title">
+            <h2>V Periodo</h2>
+        </div>
+    </div>
+    <div class="hero-panel">
+        <div class="courses-container">
+            <div class="course-card" data-id="IF322" data-prerequisite="" data-unlocks="IF327">
+                <div class="course-title">Base de Datos I</div>
+                <div class="course-code">IF322</div>
+            </div>
+            <div class="course-card" data-id="CT201" data-prerequisite="" data-unlocks="">
+                <div class="course-title">Contabilidad</div>
+                <div class="course-code">CT201</div>
+            </div>
+            <div class="course-card" data-id="IF325" data-prerequisite="IF303" data-unlocks="IF415">
+                <div class="course-title">Progrmación en Entornos de Desarrollo Visual</div>
+                <div class="course-code">IF325</div>
+            </div>
+            <div class="course-card" data-id="IF319" data-prerequisite="FS201" data-unlocks="IF324">
+                <div class="course-title">Principios de Electrónica</div>
+                <div class="course-code">IF319</div>
+            </div>
+            <div class="course-card" data-id="MT204" data-prerequisite="MT101" data-unlocks="">
+                <div class="course-title">Matemáticas Financiera</div>
+                <div class="course-code">MT204</div>
+            </div>
+            <div class="course-card" data-id="IDIN4" data-prerequisite="IDIN3" data-unlocks="IDIN5">
+                <div class="course-title">Inglés (Avanzado)</div>
+                <div class="course-code">IDIN4</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Período VI -->
+    <div class="period">
+        <div class="period-title">
+            <h2>VI Periodo</h2>
+        </div>
+    </div>
+    <div class="hero-panel">
+        <div class="courses-container">
+            <div class="course-card" data-id="IF327" data-prerequisite="IF322" data-unlocks="IF342">
+                <div class="course-title">Base de Datos II</div>
+                <div class="course-code">IF327</div>
+            </div>
+            <div class="course-card" data-id="FI501" data-prerequisite="FI101" data-unlocks="CR501">
+                <div class="course-title">Ética Profesional</div>
+                <div class="course-code">FI501</div>
+            </div>
+            <div class="course-card" data-id="IF212" data-prerequisite="" data-unlocks="IF314">
+                <div class="course-title">Análisis y Diseño de Sistemas</div>
+                <div class="course-code">IF212</div>
+            </div>
+            <div class="course-card" data-id="IF323" data-prerequisite="" data-unlocks="IF328">
+                <div class="course-title">Redes I</div>
+                <div class="course-code">IF323</div>
+            </div>
+            <div class="course-card" data-id="IF324" data-prerequisite="IF324" data-unlocks="IF329">
+                <div class="course-title">Circuitos Lógicos</div>
+                <div class="course-code">IF324</div>
+            </div>
+            <div class="course-card" data-id="IDIN5" data-prerequisite="IDIN4" data-unlocks="IDIN6">
+                <div class="course-title">Inglés (Vocabulario y Lectura Técnica)</div>
+                <div class="course-code">IDIN5</div>
+            </div>
+            <div class="course-card" data-id="ESVU2" data-prerequisite="" data-unlocks="">
+                <div class="course-title">Seminario de Madurez en la Vida Universitaria</div>
+                <div class="course-code">ESVU2</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Período VII -->
+    <div class="period">
+        <div class="period-title">
+            <h2>VII Periodo</h2>
+        </div>
+    </div>
+    <div class="hero-panel">
+        <div class="courses-container">
+            <div class="course-card" data-id="IF342" data-prerequisite="IF327" data-unlocks="IF391">
+                <div class="course-title">Bases de Datos Multidimensional</div>
+                <div class="course-code">IF342</div>
+            </div>
+            <div class="course-card" data-id="IF340" data-prerequisite="" data-unlocks="IF353">
+                <div class="course-title">Programación Multiplataforma</div>
+                <div class="course-code">IF340</div>
+            </div>
+            <div class="course-card" data-id="IF314" data-prerequisite="IF212" data-unlocks="IF346">
+                <div class="course-title">Desarrollo de Software</div>
+                <div class="course-code">IF314</div>
+            </div>
+            <div class="course-card" data-id="IF328" data-prerequisite="IF323" data-unlocks="IF428">
+                <div class="course-title">Redes II</div>
+                <div class="course-code">IF328</div>
+            </div>
+            <div class="course-card" data-id="IF329" data-prerequisite="IF324" data-unlocks="IF429">
+                <div class="course-title">Sistemas Automatizados</div>
+                <div class="course-code">IF329</div>
+            </div>
+            <div class="course-card" data-id="IDIN6" data-prerequisite="IDIN5" data-unlocks="">
+                <div class="course-title">Inglés (Composición y Conversación)</div>
+                <div class="course-code">IDIN6</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="period">
+        <div class="period-title">
+            <h2>VIII Periodo</h2>
+        </div>
+    </div>
+    <div class="hero-panel">
+        <div class="courses-container">
+            <div class="course-card" data-id="IF391" data-prerequisite="IF342" data-unlocks="IF350">
+                <div class="course-title">Sistemas Inteligentes para Negocios</div>
+                <div class="course-code">IF391</div>
+            </div>
+            <div class="course-card" data-id="IF346" data-prerequisite="IF314" data-unlocks="IF446">
+                <div class="course-title">Implementación de Sistemas de Software</div>
+                <div class="course-code">IF346</div>
+            </div>
+            <div class="course-card" data-id="IF345" data-prerequisite="" data-unlocks="IF352">
+                <div class="course-title">Sistemas Operativos I</div>
+                <div class="course-code">IF345</div>
+            </div>
+            <div class="course-card" data-id="IF370" data-prerequisite="" data-unlocks="IF381">
+                <div class="course-title">Microcontroladores</div>
+                <div class="course-code">IF370</div>
+            </div>
+            <div class="course-card" data-id="BG205" data-prerequisite="" data-unlocks="">
+                <div class="course-title">Ecología</div>
+                <div class="course-code">BG205</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Período IX -->
+    <div class="period">
+        <div class="period-title">
+            <h2>IX Periodo</h2>
+        </div>
+    </div>
+    <div class="hero-panel">
+        <div class="courses-container">
+            <div class="course-card" data-id="IF353" data-prerequisite="IF340" data-unlocks="IF357">
+                <div class="course-title">Desarrollo de Portales Web I</div>
+                <div class="course-code">IF353</div>
+            </div>
+            <div class="course-card" data-id="IF351" data-prerequisite="" data-unlocks="IF355">
+                <div class="course-title">Programación Móvil I</div>
+                <div class="course-code">IF351</div>
+            </div>
+            <div class="course-card" data-id="AD104" data-prerequisite="" data-unlocks="MT304">
+                <div class="course-title">Gestión de la Calidad Total</div>
+                <div class="course-code">AD104</div>
+            </div>
+            <div class="course-card" data-id="IF352" data-prerequisite="IF345" data-unlocks="">
+                <div class="course-title">Sistemas Operativos II</div>
+                <div class="course-code">IF352</div>
+            </div>
+            <div class="course-card" data-id="IF381" data-prerequisite="IF370" data-unlocks="">
+                <div class="course-title">Seminario de Hardware y Electricidad</div>
+                <div class="course-code">IF381</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Período X -->
+    <div class="period">
+        <div class="period-title">
+            <h2>X Periodo</h2>
+        </div>
+    </div>
+    <div class="hero-panel">
+        <div class="courses-container">
+            <div class="course-card" data-id="IF357" data-prerequisite="IF353" data-unlocks="IF362">
+                <div class="course-title">Desarrollo de Portales Web II</div>
+                <div class="course-code">IF357</div>
+            </div>
+            <div class="course-card" data-id="IF355" data-prerequisite="IF351" data-unlocks="">
+                <div class="course-title">Programación Móvil II</div>
+                <div class="course-code">IF355</div>
+            </div>
+            <div class="course-card" data-id="MT304" data-prerequisite="AD104" data-unlocks="AD402">
+                <div class="course-title">Control Estadístico de la Calidad</div>
+                <div class="course-code">MT304</div>
+            </div>
+            <div class="course-card" data-id="IF356" data-prerequisite="" data-unlocks="IF360 IF358">
+                <div class="course-title">Gestión y Estándares de Tecnología de Información</div>
+                <div class="course-code">IF356</div>
+            </div>
+            <div class="course-card" data-id="CR501" data-prerequisite="FI501" data-unlocks="FMTS1">
+                <div class="course-title">Doctrina Social de la Iglesia</div>
+                <div class="course-code">CR501</div>
+            </div>
+            <div class="course-card" data-id="ESVU3" data-prerequisite="" data-unlocks="">
+                <div class="course-title">Seminario de Preparación a la Vida Profesional</div>
+                <div class="course-code">ESVU3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Período XI -->
+    <div class="period">
+        <div class="period-title">
+            <h2>XI Periodo</h2>
+        </div>
+    </div>
+    <div class="hero-panel">
+        <div class="courses-container">
+            <div class="course-card" data-id="IF362" data-prerequisite="IF357" data-unlocks="IF361">
+                <div class="course-title">Negocios Web</div>
+                <div class="course-code">IF362</div>
+            </div>
+            <div class="course-card" data-id="IF347" data-prerequisite="" data-unlocks="IF392">
+                <div class="course-title">Programación de Negocios</div>
+                <div class="course-code">IF347</div>
+            </div>
+            <div class="course-card" data-id="AD402" data-prerequisite="MT304" data-unlocks="">
+                <div class="course-title">Planeación y Diseño de un Modelo de Calidad</div>
+                <div class="course-code">AD402</div>
+            </div>
+            <div class="course-card" data-id="IF360" data-prerequisite="IF356" data-unlocks="IF380">
+                <div class="course-title">Seguridad Informática y Gestión de Riesgo</div>
+                <div class="course-code">IF360</div>
+            </div>
+            <div class="course-card" data-id="IF358" data-prerequisite="IF356" data-unlocks="">
+                <div class="course-title">Administración de Centros de Cómputo</div>
+                <div class="course-code">IF358</div>
+            </div>
+            <div class="course-card" data-id="FMTS1" data-prerequisite="CR501" data-unlocks="">
+                <div class="course-title">Trabajo Educativo Social</div>
+                <div class="course-code">FMTS1</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Período XII -->
+    <div class="period">
+        <div class="period-title">
+            <h2>XII Periodo</h2>
+        </div>
+    </div>
+    <div class="hero-panel">
+        <div class="courses-container">
+            <div class="course-card" data-id="IF361" data-prerequisite="IF362" data-unlocks="">
+                <div class="course-title">Seminario-Taller de Software</div>
+                <div class="course-code">IF361</div>
+            </div>
+            <div class="course-card" data-id="IF392" data-prerequisite="IF347" data-unlocks="">
+                <div class="course-title">Gestión de Proyectos Informáticos</div>
+                <div class="course-code">IF392</div>
+            </div>
+            <div class="course-card" data-id="IF350" data-prerequisite="IF391" data-unlocks="">
+                <div class="course-title">Big Data</div>
+                <div class="course-code">IF350</div>
+            </div>
+            <div class="course-card" data-id="IF380" data-prerequisite="IF360" data-unlocks="">
+                <div class="course-title">Auditoría de Sistemas de Información</div>
+                <div class="course-code">IF380</div>
+            </div>
+            <div class="course-card" data-id="IF393" data-prerequisite="" data-unlocks="">
+                <div class="course-title">Excel Avanzado para Ingeniería</div>
+                <div class="course-code">IF393</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Período XIII -->
+    <div class="period">
+        <div class="period-title">
+            <h2>XIII Periodo</h2>
+        </div>
+    </div>
+    <div class="hero-panel">
+        <div class="courses-container">
+            <div class="course-card" data-id="IF400" data-prerequisite="" data-unlocks="">
+                <div class="course-title">Práctica Profesional Supervisada</div>
+                <div class="course-code">IF400</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

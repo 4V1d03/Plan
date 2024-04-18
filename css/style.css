@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+h1 {
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.period {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    padding-left: 0; 
+    height: 100%; 
+}
+
+.period-title {
+    width: 200px; 
+    color: #fff;
+}
+
+.period h2 {
+    font-size: 2rem;
+    margin: 0; 
+    color: #fff;
+}
+
+
+.hero-panel {
+    background-color: #000000; 
+    padding: 20px; 
+    margin: 0 auto; 
+    border-radius: 10px; 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 20px;
+}
+
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px #0000001a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 150px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+.course-card.active-prerequisite {
+    box-shadow: 0 0 40px 10px #fffb00e6;
+}
+
+
+.course-card.active-unlocks {
+    box-shadow: 0 0 40px 10px #66ff00e6; 
+}
+
+.course-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.course-code {
+    font-size: 15px;
+    color: #777777;
+    margin-top: 15px;
+}
+
+.visible {
+    display: none;
+    margin-bottom: 60px; 
+}
+
+@media (max-width: 480px) {
+    .course-card {
+        width: 100%;
+    }
+    .period {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    .hero-panel {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-panel {
+        width: auto; 
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .course-card {
+        width: calc(50% - 20px);
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
